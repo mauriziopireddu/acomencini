@@ -1,7 +1,14 @@
 import { Heading } from "components/heading";
+import Head from "next/head";
+import { getTitle } from "utils/PageTitle";
 
-function Home() {
-  return (
+const title = getTitle();
+
+const Home = () => (
+  <>
+    <Head>
+      <title>{title}</title>
+    </Head>
     <div className="flex flex-col lg:h-screen lg:flex-row">
       <aside className="w-full bg-primary">X</aside>
 
@@ -25,7 +32,7 @@ function Home() {
         </div>
       </main>
     </div>
-  );
-}
+  </>
+);
 
 export default Home;
