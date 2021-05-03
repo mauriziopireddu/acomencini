@@ -6,6 +6,9 @@ module.exports = {
       colors: {
         primary: "#22605e",
       },
+      fontFamily: {
+        heading: "Architects Daughter",
+      },
     },
   },
   variants: {
