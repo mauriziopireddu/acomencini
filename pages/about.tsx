@@ -1,5 +1,5 @@
-import { Pages } from "config";
 import Head from "next/head";
+import { Pages } from "config";
 import { getTitle } from "utils/PageTitle";
 
 const title = getTitle(Pages.About);
