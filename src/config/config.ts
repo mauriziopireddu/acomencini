@@ -1,3 +1,5 @@
+import { Pages } from "./pages";
+
 export const config = {
   acronym: "AC",
   persona: "Alessandra Comencini",
@@ -9,27 +11,27 @@ export const config = {
       "https://www.goodreads.com/user/show/114878357-alessandra-comencini",
   },
   pages: {
-    index: {
+    [Pages.Home]: {
       name: "Home",
       path: "/",
     },
-    about: {
+    [Pages.About]: {
       name: "About",
       path: "/about",
     },
-    blog: {
+    [Pages.Blog]: {
       name: "Blog",
       path: "/blog",
     },
-    contact: {
+    [Pages.Contact]: {
       name: "Contact",
       path: "/contact",
     },
-    portfolio: {
+    [Pages.Portfolio]: {
       name: "Portfolio",
       path: "/portfolio",
     },
-    notFound: {
+    [Pages.Notfound]: {
       name: "404 Not Found",
     },
   },

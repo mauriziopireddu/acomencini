@@ -1,8 +1,8 @@
-import { config } from "config";
+import { config, Pages } from "config";
 
 const { persona } = config;
 
-export const getTitle = (pageName?: string, { separator = " | " } = {}) => {
+export const getTitle = (pageName?: Pages, { separator = " | " } = {}) => {
   if (!pageName) {
     return persona;
   }

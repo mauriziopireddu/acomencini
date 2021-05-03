@@ -1,4 +1,4 @@
-import React from "react";
+import { forwardRef } from "react";
 
 type BoxOwnProps<E extends React.ElementType = React.ElementType> = {
   as?: E;
@@ -13,7 +13,7 @@ export const PolymorphicComponent: <
   E extends React.ElementType = typeof defaultElement
 >(
   props: BoxProps<E>
-) => React.ReactElement | null = React.forwardRef(
+) => React.ReactElement | null = forwardRef(
   (props: BoxOwnProps, ref: React.Ref<Element>) => {
     const Element = props.as || defaultElement;
     return <Element ref={ref} {...props} as={undefined} />;

@@ -1,4 +1,5 @@
 import { Heading } from "components/heading";
+import { Navbar } from "components/navbar";
 import Head from "next/head";
 import { getTitle } from "utils/PageTitle";
 
@@ -10,7 +11,9 @@ const Home = () => (
       <title>{title}</title>
     </Head>
     <div className="flex flex-col lg:h-screen lg:flex-row">
-      <aside className="w-full bg-primary">X</aside>
+      <aside className="w-full bg-primary">
+        <Navbar />
+      </aside>
 
       <main className="flex flex-col justify-center w-full">
         <div className="max-w-md mx-auto">
