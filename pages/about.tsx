@@ -1,4 +1,4 @@
-import { config, Pages } from "config";
+import { Pages } from "config";
 import Head from "next/head";
 import { getTitle } from "utils/PageTitle";
 
