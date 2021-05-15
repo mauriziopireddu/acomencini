@@ -2,6 +2,7 @@ import Link from "next/link";
 import { config } from "config";
 import { Hamburger } from "./Hamburger";
 import { NavLink } from "./NavLink";
+import { Socials } from "components/socials";
 
 const { About, Blog, Portfolio, Contact } = config.pages;
 
@@ -24,6 +25,7 @@ export const Navbar = () => {
         <NavLink page={Portfolio} />
         <NavLink page={Contact} />
       </div>
+      <Socials />
     </nav>
   );
 };
