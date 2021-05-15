@@ -3,7 +3,7 @@ import { config } from "config";
 import { Hamburger } from "./Hamburger";
 import { NavLink } from "./NavLink";
 
-const { about, blog, portfolio, contact } = config.pages;
+const { About, Blog, Portfolio, Contact } = config.pages;
 
 export const Navbar = () => {
   return (
@@ -19,10 +19,10 @@ export const Navbar = () => {
         <Hamburger />
       </div>
       <div className="md:items-end hidden lg:flex">
-        <NavLink page={about} />
-        <NavLink page={blog} />
-        <NavLink page={portfolio} />
-        <NavLink page={contact} />
+        <NavLink page={About} />
+        <NavLink page={Blog} />
+        <NavLink page={Portfolio} />
+        <NavLink page={Contact} />
       </div>
     </nav>
   );

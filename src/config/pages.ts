@@ -1,8 +1,8 @@
 export enum Pages {
-  Home = "index",
-  About = "about",
-  Blog = "blog",
-  Contact = "contact",
-  Portfolio = "portfolio",
-  Notfound = "notFound",
+  Home = "Index",
+  About = "About",
+  Blog = "Blog",
+  Contact = "Contact",
+  Portfolio = "Portfolio",
+  Notfound = "Not found",
 }
